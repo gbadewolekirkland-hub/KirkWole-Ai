@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101126">
+  <title>KIRKLAND AI – Anime Edition</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="logo">⚡</div>
+      <div><p class="eyebrow">ANIME KINGDOM PRESENTS</p><h1>KIRKLAND AI</h1><p class="sub">ANIME EDITION · Your anime companion</p></div>
+    </header>
+    <section class="intro">
+      <h2>Welcome to the Kingdom 👑</h2>
+      <p>Ask about anime, discover your next series, test your knowledge or compare legendary characters.</p>
+      <div class="chips">
+        <button data-prompt="Recommend 5 anime for a beginner and explain why.">Anime recommendations</button>
+        <button data-prompt="Give me a 5-question Naruto quiz, one question at a time.">Anime quiz</button>
+        <button data-prompt="Tell me an interesting anime fact.">Anime fact</button>
+      </div>
+    </section>
+    <section class="chat" aria-label="Chat">
+      <div id="messages" aria-live="polite">
+        <article class="bubble bot"><b>KIRKLAND AI</b><p>What's up, anime fan? ⚡ Ask me anything about anime. Type <code>!help</code> to see ideas.</p></article>
+      </div>
+      <form id="form">
+        <label class="sr-only" for="prompt">Your message</label>
+        <input id="prompt" maxlength="1500" placeholder="Ask an anime question..." autocomplete="off" required>
+        <button id="send" type="submit">Send</button>
+      </form>
+      <p class="fine">AI can make mistakes. Check important anime facts. Avoid sharing private information.</p>
+    </section>
+    <footer>⚡ ONE KINGDOM. INFINITE ANIME VIBES. 👑</footer>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>
